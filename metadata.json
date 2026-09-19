@@ -1,0 +1,8 @@
+{
+  "name": "Raj Video",
+  "description": "Premium wedding photography and cinematic videography website for Raj Video, an elite studio with over 25 years of experience serving families across Bihar and Uttar Pradesh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

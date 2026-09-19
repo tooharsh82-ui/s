@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Sleek Theme Gold Color Mapping */
+  --color-amber-300: #FFD84D;
+  --color-amber-400: #F4C430;
+  --color-amber-500: #E6B41A;
+  --color-amber-600: #C49A00;
+  --color-amber-450: #F4C430;
+}
+
+/* Base resets & custom scrollbar */
+html {
+  scroll-behavior: smooth;
+  background-color: #0B0B0B;
+  color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F4C430;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFD84D;
+}
+
+/* Luxury animations & styling */
+.cinematic-glow {
+  box-shadow: 0 0 40px -10px rgba(244, 196, 48, 0.15);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F4C430 0%, #FFD84D 50%, #C49A00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #F4C430 0%, #FFD84D 50%, #C49A00 100%);
+}
+
+.border-gold-gradient {
+  border-image: linear-gradient(135deg, #F4C430 0%, #B8860B 100%) 1;
+}
+
+.glass-nav {
+  background-color: rgba(11, 11, 11, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card {
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(244, 196, 48, 0.1);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(244, 196, 48, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(244, 196, 48, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Custom keyframes for fade reveal */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
